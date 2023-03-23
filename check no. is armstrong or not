@@ -1,0 +1,19 @@
+// check no. is armstrong or not
+#include <stdio.h>
+int main() {
+    int n,i,digit,sum=0,power,temp;
+    scanf("%d",&n);
+    temp=n;
+    for(i=0;n!=0;i++)
+    {
+        digit=n%10;
+        power=digit * digit * digit;
+        sum=sum+power;
+        n=n/10;
+    }
+    if(temp==sum)
+    printf("output = %d is Armstrong number ",sum);
+    else
+    printf("output = %d is not Armstrong number",sum);
+    return 0;
+}
