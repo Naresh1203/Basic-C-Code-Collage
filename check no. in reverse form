@@ -1,0 +1,16 @@
+// check no. in reverse form
+#include <stdio.h>
+int main() {
+    int n,i,digit,reverse=0;
+    scanf("%d",&n);
+ 
+    for(i=0;n!=0;i++)
+    {
+        digit=n%10;
+        reverse=reverse * 10 +digit;
+        n=n/10;
+    }
+    
+    printf("Reverse no. is %d",reverse);
+    return 0;
+}
