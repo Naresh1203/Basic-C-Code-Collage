@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+        int i,j,m,n;
+
+        printf("Enter matrix order raw and column");
+        scanf("%d%d",&i,&j);
+
+        int a[10][10];
+        for(m=0;m<i;m++)
+        {
+                for(n=0;n<j;n++)
+                {
+                        scanf("%d",&a[m][n]);
+
+                }
+
+        }
+        for(m=0;m<i;m++)
+        {
+                for(n=0;n<j;n++)
+                {
+                        printf("%d\t",a[m][n]);
+                }
+                printf("\n");
+        }
+
+
+
+
+}
